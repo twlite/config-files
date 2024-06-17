@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+  // The following options are mapped from https://www.typescriptlang.org/tsconfig
+  "compilerOptions": {
+    // type checking
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "alwaysStrict": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "useUnknownInCatchVariables": true,
+    "strictPropertyInitialization": true,
+
+    // module resolution
+    "allowArbitraryExtensions": false,
+    "allowImportingTsExtensions": false,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    // emitting
+    "declaration": false,
+    "declarationMap": false,
+    "newLine": "lf",
+    "outDir": "dist",
+    "noEmitHelpers": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "importHelpers": false,
+
+    // javascript support
+    "allowJs": true,
+    "checkJs": false,
+
+    // interop constraints
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    // Language and environment
+    "target": "ESNext",
+    "lib": ["ESNext"],
+
+    // output formatting
+    "pretty": true,
+
+    // completeness
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
